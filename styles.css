@@ -330,11 +330,22 @@ nav ul li a:hover .swing-icon {
 
 @media (max-width: 480px) {
   .hero img.illuallan {
-    margin-top: 90px;
+    /* position the illustration under the overlay on small screens */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    margin-top: 0;
     max-width: 320px;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    z-index: 1; /* sit below overlay (overlay will be z-index:2)
+                  and above the hero veil (::before at z-index:0) */
+  }
+
+  .hero .overlay {
+    z-index: 2;
+    justify-content: flex-start; /* move overlay content upward */
+    padding-top: 22px; /* pull the overlay content closer to top */
   }
 }
 

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Myrmidon – Food Truck</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Intro+Rust:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page">
+        <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img id="logo2" src="images/logo2.png" alt="Logo Le Myrmidon">
+                <span class="brand-text">LE MYRMIDON</span>
+            </a>
+
+            <!-- Burger menu -->
+            <button id="burger" aria-label="Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+
+                <!-- Bouton fermer menu mobile -->
+                <button id="close-menu" aria-label="Fermer le menu">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <ul>
+                    <li>
+                        <a href="#menu">
+                            <i class="fas fa-utensils pulse-icon"></i>
+                            <span class="nav-text">Nos Menus</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <i class="fas fa-info-circle swing-icon"></i>
+                            <span class="nav-text">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#localisation">
+                            <i class="fas fa-map-marker-alt pulse-icon"></i>
+                            <span class="nav-text">Localisation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fas fa-envelope swing-icon"></i>
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+<!-- Bouton de changement de thème
+            <button id="theme-toggle" aria-label="Changer de thème">
+            <i class="fas fa-moon"></i>
+            </button>
+-->
+        </div>
+        </header>
+
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay">
+        <h1>Le Myrmidon</h1>
+        <p>Cuisine Familiale - à s'en lécher les doigts</p>
+        <a href="#menu" class="cta">Voir le Menu</a>
+        </div>
+        <img src="images/illuallan.png" alt="Illustration de Allan" class="illuallan">
+        <img src="images/marmite.png" alt="Illustration de plats" class="illufood">
+    </section>
+
+
+
+<!-- MENU -->
+    <section id="menu" class="section bg-light">
+        <div class="container">
+            <h2>Menu</h2>
+
+            <div class="tarifs-grid">
+                <div class="tarif-card">
+                    <img src="images/tajine3.jpg" alt="Tajine d'agneaux" class="menu-img" width="945" height="540">
+                </div>
+                
+            </div>
+
+                <div style="text-align:center; margin-top:20px;">
+                    <a href="tel:0694905601" class="order-btn">Réserver maintenant</a>
+                </div>
+            </div>
+    </section>            
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <h2>A Propos</h2>
+            <p class="alinea">
+                De passage avant de rejoindre les communes de l'intérieur ou en visite pour découvrir ou redécouvrir Cayenne et ses alentours, Myrmidon vous offre une experience gustative dans un cadre familial à prix abordable proche du centre-ville et des plages.
+            </p>
+            <p class="alinea">
+                Allan a eu envie de partager la Guyane, sa Guyane en toute simplicité. Il vous propose chaque semaine des plats differents.
+            </p><br>
+            <p class="alinea">
+                Il peut également vous accompagner afin de faciliter la découverte de sites remarquables par le biais de son entreprise, Guyane PAS à Pas (<a href="http://www.escapade-guyane.com" target="_blank">www.escapade-guyane.com</a>).
+            </p><br>
+
+            <p class="alinea">
+                Langues parlées : 🇫🇷 Français, 🇬🇧 English, 🇪🇸 Español
+            </p><br>
+
+                        <!-- Image intégrée -->
+            <div class="about-img-wrapper">
+                <img src="images/backgroundhero.jpg" alt="Jardin tropical" class="about-img">
+                <img src="images/carousel_img2.jpeg" alt="Jardin tropical" class="about-img">
+                <img src="images/carousel_img3.jpeg" alt="Jardin tropical" class="about-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LOCALISATION -->
+    <section id="localisation" class="section bg-light">
+        <div class="container">
+            <h2>Localisation</h2>
+            <p>WPJ4+548, Chem. Saint-Antoine, Cayenne 97300, Cayenne – Guyane française</p>
+            <div id="map" class="scroll-reveal"></div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+        <section id="contact" class="section">
+                <div class="container">
+                    <h2>Contact / Reservation</h2>
+                    <p><strong>06 94 90 56 01</strong> (SMS/WhatsApp)</p>
+                    <p>Téléphone (infos) : <strong>05 94 30 10 27</strong></p>
+                    <p><strong>Horaires</strong> : Du mardi au dimanche — 11:30 à 14:30 & 18:00 à 22:00</p>
+                    <p>Email : <strong>maqroll.lecarbet@gmail.com</strong></p><br>
+                    <a href="mailto:maqroll.lecarbet@gmail.com" class="cta">Envoyer un message</a><br><br>
+                    <p>Pour les événements ou privatisations, merci de nous contacter à l'avance.</p>
+                </div>
+        </section>
+
+    <!-- FOOTER -->
+    <footer>
+    <p class="droitfooter">&copy; 2026 Le Myrmidon – Tous droits réservés</p>
+    <div class="social-buttons">
+        <a href="https://www.escapade-guyane.com" target="_blank" class="social-btn google">
+        <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Maqroll-Le-Carbet/100063645814185/" target="_blank" class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/lemyrmidon" target="_blank" class="social-btn instagram">
+        <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    </footer>
+
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -345,7 +345,7 @@ nav ul li a:hover .swing-icon {
   .hero .overlay {
     z-index: 2;
     justify-content: flex-start; /* move overlay content upward */
-    padding-top: 22px; /* pull the overlay content closer to top */
+    padding-top: 50px; /* pull the overlay content closer to top */
   }
 }
 
